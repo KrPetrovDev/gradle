@@ -7,7 +7,9 @@ abstract class NewTask extends DefaultTask {
 
     @TaskAction
     def generate(){
-        print "New One"
+        def variable = System.getenv('HOME')
+        println "New One"
+        print variable
     }
 
 }
