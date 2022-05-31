@@ -16,7 +16,7 @@ abstract class NewTask extends DefaultTask {
         println "New One"
         print "docker run image -P"+variable+" -P otro 8080:8080"
 
-        logging.captureStandardOutput(LogLevel.INFO)
+        logging.captureStandardOutput(LogLevel.QUIET)
         println "After Change loggingLevel"
 
 
