@@ -9,7 +9,7 @@ abstract class NewTask extends DefaultTask {
     def generate(){
         def variable = System.getenv('HOME')
         println "New One"
-        print "docker run image -P "+variable+" -P otro 8080:8080"
+        print "docker run image -P"+variable+" -P otro 8080:8080"
     }
 
 }
