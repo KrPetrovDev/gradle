@@ -1,17 +1,16 @@
 package e2y
 
-import org.gradle.api.DefaultTask
-import org.gradle.api.GradleException
 import org.gradle.api.logging.LogLevel
 import org.gradle.api.tasks.TaskAction
 
-import javax.inject.Inject
-
-class NewTask extends DefaultTask {
+class NewTask extends AppendingTask {
 
 
     @TaskAction
     def generate(){
+
+        PrintingTest()
+
         println "Before Change loggingLevel"
 
         logging.captureStandardOutput(LogLevel.LIFECYCLE)
