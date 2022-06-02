@@ -13,13 +13,14 @@ class NewTask extends AppendingTask {
 
         println "Before Change loggingLevel"
 
+        LogLevel logLevelBefore = logging.getLevel()
         logging.captureStandardOutput(LogLevel.LIFECYCLE)
 
         def variable = System.getenv('HOME')
         println "New One"
         print "docker run image -P"+variable+" -P otro 8080:8080"
 
-        logging.captureStandardOutput(LogLevel.QUIET)
+        logging.captureStandardOutput(logLevelBefore)
         println "After Change loggingLevel"
 
 
