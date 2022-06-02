@@ -20,7 +20,7 @@ class NewTask extends AppendingTask {
         println "New One"
         print "docker run image -P"+variable+" -P otro 8080:8080"
 
-        logging.captureStandardOutput(LogLevel.INFO)
+        logging.captureStandardOutput(LogLevel.WARN)
         println "After Change loggingLevel"
 
 
