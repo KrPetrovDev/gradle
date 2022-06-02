@@ -2,8 +2,14 @@ package e2y
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.logging.LogLevel
+import org.gradle.api.tasks.TaskAction
 
 class AppendingTask extends DefaultTask {
+
+    def AppendingTask(){
+        doFirst {print("nanani father")}
+
+    }
 
     def PrintingTest(){
         println "Anywhere -- Before Change loggingLevel"
