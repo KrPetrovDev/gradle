@@ -11,6 +11,9 @@ class AppendingTask extends DefaultTask {
     def AppendingTask(){
         doFirst {print("nanani father")}
 
+
+        println "Before Change loggingLevel Father"
+
     }
 
     @Override
