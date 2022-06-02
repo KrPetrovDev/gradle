@@ -16,7 +16,6 @@ class NewTask extends AppendingTask {
 
         doFirst {print("nanani")}
 
-        PrintingTest()
 
         println "Before Change loggingLevel"
 
