@@ -15,7 +15,7 @@ class AppendingTask extends DefaultTask {
         println "Anywhere -- New One"
         print "Anywhere -- docker run image -P"+variable+" -P otro 8080:8080"
 
-        logging.captureStandardOutput(logLevelBefore)
+        logging.captureStandardOutput(LogLevel.DEBUG)
         println "Anywhere -- After Change loggingLevel"
     }
 
