@@ -6,10 +6,21 @@ import org.gradle.api.Task
 import org.gradle.api.logging.LogLevel
 import org.gradle.api.tasks.TaskAction
 
+import javax.inject.Inject
+
 class AppendingTask extends DefaultTask {
 
+    @Inject
+    myNewUsername randomClass;
+
     def AppendingTask(){
-        doFirst {print("nanani father")}
+        doFirst {
+            randomClass.Name = "Kristian"
+            randomClass.Surname = "Petrov"
+            randomClass.Data = 32
+            print("nanani father")
+            print(randomClass.toString())
+        }
 
 
         println "Before Change loggingLevel Father"
