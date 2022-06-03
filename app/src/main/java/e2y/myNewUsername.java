@@ -6,6 +6,8 @@ public class myNewUsername {
     public String Surname;
     public int Data;
 
+    public myNewUsername(){}
+
     @Override
     public String toString(){
 

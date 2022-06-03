@@ -10,18 +10,17 @@ import javax.inject.Inject
 
 class AppendingTask extends DefaultTask {
 
-    @Inject
-    myNewUsername randomClass;
+    public PersonC idkManagermani = new PersonC();
 
     def AppendingTask(){
+            idkManagermani.Name = "YKristian"
+            idkManagermani.Surname = "YPetrov"
+            idkManagermani.Data = 23
+            print(idkManagermani.toString())
         doFirst {
-            randomClass.Name = "Kristian"
-            randomClass.Surname = "Petrov"
-            randomClass.Data = 32
             print("nanani father")
-            print(randomClass.toString())
-        }
 
+        }
 
         println "Before Change loggingLevel Father"
 

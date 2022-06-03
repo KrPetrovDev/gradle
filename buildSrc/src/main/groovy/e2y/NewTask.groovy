@@ -4,17 +4,19 @@ import org.gradle.api.Task
 import org.gradle.api.logging.LogLevel
 import org.gradle.api.tasks.TaskAction
 
+import javax.inject.Inject
+import javax.inject.Named
 import java.lang.annotation.ElementType
 import java.lang.annotation.Retention
 import java.lang.annotation.RetentionPolicy
 
+@Named
 class NewTask extends AppendingTask {
 
-
-
     def NewTask(){
-
-        doFirst {print("nanani")}
+        doFirst {
+            print("nanani")
+        }
 
 
         println "Before Change loggingLevel"
