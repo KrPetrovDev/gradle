@@ -30,7 +30,7 @@ dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
 }
-
+/*
 testing {
     suites {
         // Configure the built-in test suite
@@ -40,7 +40,7 @@ testing {
         }
     }
 }
-
+*/
 tasks.register('helloNumber2', e2y.NewTask)
 
 application {
